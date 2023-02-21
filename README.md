@@ -1,2 +1,2 @@
 # farcaster-net
-General-pupose .NET interface
+Farcaster Experiments in .NET

@@ -1,0 +1,15 @@
+/workspaces/farcaster-net/src/Infrastructure/bin/Debug/net6.0/Infrastructure.deps.json
+/workspaces/farcaster-net/src/Infrastructure/bin/Debug/net6.0/Infrastructure.dll
+/workspaces/farcaster-net/src/Infrastructure/bin/Debug/net6.0/Infrastructure.pdb
+/workspaces/farcaster-net/src/Infrastructure/bin/Debug/net6.0/Application.dll
+/workspaces/farcaster-net/src/Infrastructure/bin/Debug/net6.0/Application.pdb
+/workspaces/farcaster-net/src/Infrastructure/obj/Debug/net6.0/Infrastructure.csproj.AssemblyReference.cache
+/workspaces/farcaster-net/src/Infrastructure/obj/Debug/net6.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/farcaster-net/src/Infrastructure/obj/Debug/net6.0/Infrastructure.AssemblyInfoInputs.cache
+/workspaces/farcaster-net/src/Infrastructure/obj/Debug/net6.0/Infrastructure.AssemblyInfo.cs
+/workspaces/farcaster-net/src/Infrastructure/obj/Debug/net6.0/Infrastructure.csproj.CoreCompileInputs.cache
+/workspaces/farcaster-net/src/Infrastructure/obj/Debug/net6.0/Infrastructure.csproj.CopyComplete
+/workspaces/farcaster-net/src/Infrastructure/obj/Debug/net6.0/Infrastructure.dll
+/workspaces/farcaster-net/src/Infrastructure/obj/Debug/net6.0/refint/Infrastructure.dll
+/workspaces/farcaster-net/src/Infrastructure/obj/Debug/net6.0/Infrastructure.pdb
+/workspaces/farcaster-net/src/Infrastructure/obj/Debug/net6.0/ref/Infrastructure.dll
