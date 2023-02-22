@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "src\Console\Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{83854217-5640-44FE-A7D6-BB21FC9BCBEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarpcastApi", "src\WarpcastApi\WarpcastApi.csproj", "{14AFD221-5DF2-4D91-82F6-0D56B66E780E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -76,6 +78,10 @@ Global
 		{83854217-5640-44FE-A7D6-BB21FC9BCBEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83854217-5640-44FE-A7D6-BB21FC9BCBEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83854217-5640-44FE-A7D6-BB21FC9BCBEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14AFD221-5DF2-4D91-82F6-0D56B66E780E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14AFD221-5DF2-4D91-82F6-0D56B66E780E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14AFD221-5DF2-4D91-82F6-0D56B66E780E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14AFD221-5DF2-4D91-82F6-0D56B66E780E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +95,7 @@ Global
 		{DB7F98AB-3D02-4652-80BC-681A00168ECC} = {9DBFD6CA-EFB8-43C7-9BAB-E318EE6F134B}
 		{8953EDC8-BD1D-48FF-8735-9DC570C5CD7F} = {F76F0E9E-98D3-4C66-8FDD-181E8C823DDA}
 		{83854217-5640-44FE-A7D6-BB21FC9BCBEB} = {F76F0E9E-98D3-4C66-8FDD-181E8C823DDA}
+		{14AFD221-5DF2-4D91-82F6-0D56B66E780E} = {F76F0E9E-98D3-4C66-8FDD-181E8C823DDA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {507BE0AF-5740-4AE0-8EFB-2F84E40BFADB}

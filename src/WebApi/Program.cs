@@ -17,6 +17,9 @@ _ = app.MapAuthorEndpoints();
 _ = app.MapMovieEndpoints();
 _ = app.MapReviewEndpoints();
 
+// farcaster endpoints
+_ = app.MapCastEndpoints();
+
 try
 {
     Log.Information("Starting host");

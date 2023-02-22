@@ -6,3 +6,8 @@ public abstract record Entity
     public DateTime DateCreated { get; init; }
     public DateTime DateModified { get; init; }
 }
+
+public abstract record FcEntity
+{
+
+}

@@ -9,7 +9,7 @@ public partial class Cast
     public User Author { get; set; }
     public string Text { get; set; }
     public long Timestamp { get; set; }
-    public DateTime TimestampUtc => DateTimeOffset.FromUnixTimeSeconds(Timestamp).UtcDateTime;
+    public DateTime TimestampUtc => DateTimeOffset.FromUnixTimeMilliseconds(Timestamp).UtcDateTime;
     public Reactions Replies { get; set; }
     public Reactions Reactions { get; set; }
     public Recasts Recasts { get; set; }

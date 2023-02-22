@@ -12,6 +12,8 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddApplication(this IServiceCollection services)
     {
+        _ = services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
         _ = services.AddMediatR(Assembly.GetExecutingAssembly());
         _ = services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly(), ServiceLifetime.Transient);
 

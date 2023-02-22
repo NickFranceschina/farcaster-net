@@ -7,6 +7,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using Application;
 using Infrastructure;
+using Infrastructure.WarpcastApi;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http.Json;
 using Microsoft.Extensions.DependencyInjection;
@@ -82,6 +83,7 @@ public static class ProgramExtensions
 
         #region Project Dependencies
 
+        _ = builder.Services.AddWarpcastApi();
         _ = builder.Services.AddInfrastructure();
         _ = builder.Services.AddApplication();
 
