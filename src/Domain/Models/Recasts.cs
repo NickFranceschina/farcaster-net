@@ -1,0 +1,4 @@
+namespace FarcasterNet.Domain.Models;
+
+
+

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>FarcasterNet.$(AssemblyName)</RootNamespace>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+</Project>
