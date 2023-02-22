@@ -121,7 +121,10 @@ public static class ProgramExtensions
 
         #region API Configuration
 
-        // _ = app.UseHttpsRedirection();
+        if (!app.Environment.IsDevelopment())
+        {
+            _ = app.UseHttpsRedirection();
+        }        
 
         #endregion API Configuration
 
