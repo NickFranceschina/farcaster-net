@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "R9r3dSOcOB2unnlOkQjSCEkfQGhiall0QcnkPOWJEj5nxCQsYAIWfOkJIOfJNkgNAAipafgrG/n9o3H/GuNNFw==",
+  "dgSpecHash": "nYTOESCH3WnWxYfyyNSspSd027Rg+0OZj5NabwMxoHpURN+doxzSqN8ly8/dOdofmfq+hhBTeh2d82icyHJqlw==",
   "success": true,
   "projectFilePath": "/workspaces/farcaster-net/src/Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [

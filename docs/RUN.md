@@ -9,6 +9,10 @@ There are multiple ways to run this project using two pre-configured environment
 The CLI makes everything easier in .NET engineering.  Running this application is no different.  This task is aided by the launchsettings.json file that sets all the parameters required to run the API on your local machine.  Ports, environments and logging are all configured in the settings, so the only command required is the following single line statement.  
 
 ``` bash
+find . -iname "bin" -o -iname "obj" | xargs rm -rf
+```
+
+``` bash
 dotnet run --project ./src/Presentation
 ```
 

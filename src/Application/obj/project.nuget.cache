@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nsf0QmyOlJuNPJiWKe4XfwCwawZpSVRCN4P+cFUdcO27cDU5O1F9bVJScs2czalyEplyX/zJ6IH9Lqg10776hA==",
+  "dgSpecHash": "uWxNe9A+qJdvHs1os9rU8OqwV+0pVs6vzeW0L5dzqz9LMjjL/ZvbZdWqRr9bdhYyTIsqraxx89mdqCaTzO8FUw==",
   "success": true,
   "projectFilePath": "/workspaces/farcaster-net/src/Application/Application.csproj",
   "expectedPackageFiles": [

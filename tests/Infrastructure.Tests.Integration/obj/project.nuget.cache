@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "H6p5KL5FzrH/pb1fTQdGavuWcCvRBh3tmWeSjHztt6/pTwYNNdku4GJ2wgz0WSpxJ9Xju2mzwC8lTSxbRxN5RQ==",
+  "dgSpecHash": "2BayXXQxOnx5T7pRk7jugm9VKNBqddgJC+86LWrlNrHjxQU9sBrif/RjuAUYue+/ogP9oz+waUzrCXmyXwpgdQ==",
   "success": true,
   "projectFilePath": "/workspaces/farcaster-net/tests/Infrastructure.Tests.Integration/Infrastructure.Tests.Integration.csproj",
   "expectedPackageFiles": [

@@ -24,7 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9DBFD6CA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\Application\Application.csproj", "{71EE311D-7D24-456C-A071-222E594F87D0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "src\Presentation\Presentation.csproj", "{B91AA43F-3487-42F4-A0B8-2A5AF4F93625}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "src\WebApi\WebApi.csproj", "{B91AA43F-3487-42F4-A0B8-2A5AF4F93625}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{CB57ACA6-350D-4538-B6F8-79D38B8A45E1}"
 EndProject
@@ -32,9 +32,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Tests.Integr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Tests.Unit", "tests\Application.Tests.Unit\Application.Tests.Unit.csproj", "{27106CF1-B15D-4274-98BE-3316495ACEEC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation.Tests.Integration", "tests\Presentation.Tests.Integration\Presentation.Tests.Integration.csproj", "{DB7F98AB-3D02-4652-80BC-681A00168ECC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Tests.Integration", "tests\WebApi.Tests.Integration\WebApi.Tests.Integration.csproj", "{DB7F98AB-3D02-4652-80BC-681A00168ECC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarcasterCLI", "src\FarcasterCLI\FarcasterCLI.csproj", "{8953EDC8-BD1D-48FF-8735-9DC570C5CD7F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "src\Console\Console.csproj", "{8953EDC8-BD1D-48FF-8735-9DC570C5CD7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

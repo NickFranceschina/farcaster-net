@@ -14,12 +14,14 @@
         "outputPath": "/workspaces/farcaster-net/src/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+          "/workspaces/farcaster-net/NuGet.config",
           "/home/vscode/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "https://api.nuget.org/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,12 +79,14 @@
         "outputPath": "/workspaces/farcaster-net/src/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+          "/workspaces/farcaster-net/NuGet.config",
           "/home/vscode/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "https://api.nuget.org/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -152,12 +156,14 @@
         "outputPath": "/workspaces/farcaster-net/tests/Infrastructure.Tests.Integration/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+          "/workspaces/farcaster-net/NuGet.config",
           "/home/vscode/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "https://api.nuget.org/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
