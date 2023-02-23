@@ -26,7 +26,7 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
-[Aa]pp/
+#[Aa]pp/ ... this would ignore the angular /app folder
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
