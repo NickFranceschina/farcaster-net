@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sakai-ng": {
+    "ngx-farcaster": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/sakai-ng",
+            "outputPath": "dist/ngx-farcaster",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +71,11 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "sakai-ng:build:production"
+              "browserTarget": "ngx-farcaster:build:production"
             },
             "development": {
-              "browserTarget": "sakai-ng:build:development"
+              "browserTarget": "ngx-farcaster:build:development",
+              "proxyConfig": "proxy.conf.js"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sakai-ng:build"
+            "browserTarget": "ngx-farcaster:build"
           }
         },
         "test": {
@@ -115,7 +116,7 @@
       }
     }
   },
-  "defaultProject": "sakai-ng",
+  "defaultProject": "ngx-farcaster",
   "cli": {
     "analytics": false,
     "schematicCollections": [
