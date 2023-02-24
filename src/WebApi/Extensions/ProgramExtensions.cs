@@ -3,16 +3,15 @@ namespace FarcasterNet.WebApi.Extensions;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Reflection;
-using System.Text.Json;
-using System.Text.Json.Serialization;
 using Application;
 using Infrastructure;
 using Infrastructure.WarpcastApi;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http.Json;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Serilog;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 [ExcludeFromCodeCoverage]
 public static class ProgramExtensions
@@ -34,13 +33,16 @@ public static class ProgramExtensions
 
         #region Serialisation
 
-        _ = builder.Services.Configure<JsonOptions>(opt =>
+        _ = builder.Services.AddControllers().AddNewtonsoftJson(options =>
         {
-            opt.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
-            opt.SerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
-            opt.SerializerOptions.PropertyNameCaseInsensitive = true;
-            opt.SerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
-            opt.SerializerOptions.Converters.Add(new JsonStringEnumConverter(JsonNamingPolicy.CamelCase));
+            options.SerializerSettings.Formatting = Formatting.Indented;
+            // options.SerializerSettings.ContractResolver = new OrderedContractResolver();
+            options.SerializerSettings.Converters.Insert(0, new StringEnumConverter());
+            options.SerializerSettings.NullValueHandling = NullValueHandling.Include;
+            options.SerializerSettings.DateFormatHandling = DateFormatHandling.IsoDateFormat;
+            options.SerializerSettings.DateParseHandling = DateParseHandling.None;
+            // options.SerializerSettings.Converters.Add(new JObjectConverter());
+            // options.SerializerSettings.ConfigureForNodaTime(DateTimeZoneProviders.Tzdb);
         });
 
         #endregion Serialisation

@@ -27,7 +27,7 @@ export class LayoutService {
     config: AppConfig = {
         ripple: false,
         inputStyle: 'outlined',
-        menuMode: 'static',
+        menuMode: 'overlay',
         colorScheme: 'light',
         theme: 'lara-light-purple',
         scale: 14,
@@ -35,7 +35,7 @@ export class LayoutService {
 
     state: LayoutState = {
         staticMenuDesktopInactive: false,
-        overlayMenuActive: false,
+        overlayMenuActive: true,
         profileSidebarVisible: false,
         configSidebarVisible: false,
         staticMenuMobileActive: false,

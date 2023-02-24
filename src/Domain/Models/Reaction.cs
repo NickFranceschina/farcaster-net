@@ -6,7 +6,7 @@ public partial class Reaction
     public string Hash { get; set; }
     public User Reactor { get; set; }
     public long Timestamp { get; set; }
-    public DateTime TimestampUtc => DateTimeOffset.FromUnixTimeMilliseconds(Timestamp).UtcDateTime;
+    // public DateTime TimestampUtc => DateTimeOffset.FromUnixTimeMilliseconds(Timestamp).UtcDateTime;
     public string CastHash { get; set; }
 }
 

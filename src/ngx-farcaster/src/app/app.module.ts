@@ -11,6 +11,7 @@ import { EventService } from './demo/service/event.service';
 import { IconService } from './demo/service/icon.service';
 import { NodeService } from './demo/service/node.service';
 import { PhotoService } from './demo/service/photo.service';
+import { TimeagoModule } from 'ngx-timeago';
 
 @NgModule({
     declarations: [
@@ -18,7 +19,8 @@ import { PhotoService } from './demo/service/photo.service';
     ],
     imports: [
         AppRoutingModule,
-        AppLayoutModule
+        AppLayoutModule,
+        TimeagoModule.forRoot()
     ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },

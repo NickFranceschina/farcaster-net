@@ -3,7 +3,7 @@
   "profiles": {
     "FarcasterNet": {
       "commandName": "Project",
-      "launchBrowser": true,
+      "launchBrowser": false,
       "launchUrl": "swagger",
       "environmentVariables": {
         "DOTNET_ENVIRONMENT": "local"

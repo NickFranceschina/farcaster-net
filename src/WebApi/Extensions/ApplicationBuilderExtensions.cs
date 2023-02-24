@@ -2,13 +2,13 @@ namespace FarcasterNet.WebApi.Extensions;
 
 using System.Diagnostics.CodeAnalysis;
 using System.Net;
-using System.Text.Json;
 using Application.Common.Exceptions;
 using Errors;
 using FluentValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 
 [ExcludeFromCodeCoverage]
 public static class ApplicationBuilderExtensions
@@ -37,7 +37,7 @@ public static class ApplicationBuilderExtensions
                 context.Response.ContentType = "application/json";
 
                 // Return the Serialized Generic Error
-                await context.Response.WriteAsync(JsonSerializer.Serialize(apiError));
+                await context.Response.WriteAsync(JsonConvert.SerializeObject(apiError));
             }
         }));
 

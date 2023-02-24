@@ -5,7 +5,7 @@ public partial class Notification
     public NotificationType Type { get; set; }
     public string Id { get; set; }
     public long Timestamp { get; set; }
-    public DateTime TimestampUtc => DateTimeOffset.FromUnixTimeMilliseconds(Timestamp).UtcDateTime;
+    // public DateTime TimestampUtc => DateTimeOffset.FromUnixTimeMilliseconds(Timestamp).UtcDateTime;
     public User Actor { get; set; }
     public Content Content { get; set; }
 }

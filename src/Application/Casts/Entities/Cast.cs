@@ -9,24 +9,31 @@ public record Cast : FcEntity
     public string Hash { get; set; }
     public string ThreadHash { get; set; }
     public string ParentHash { get; set; }
-    // public User ParentAuthor { get; set; }
-    // public User Author { get; set; }
+    public User ParentAuthor { get; set; }
+    public User Author { get; set; }
     public string Text { get; set; }
-    public long Timestamp { get; set; }
-    public DateTime TimestampUtc { get; set; }
-    // public Reactions Replies { get; set; }
-    // public Reactions Reactions { get; set; }
-    // public Recasts Recasts { get; set; }
+    public long Timestamp { get; set; } 
+
+    public int RepliesCount { get; set; }
+    public int ReactionsCount { get; set; }
+    public int RecastsCount { get; set; }
+
     // public Reactions Watches { get; set; }
     // public CastViewerContext ViewerContext { get; set; }
+
+    public bool ViewerContextReacted { get; set; }
+    public bool ViewerContextRecast { get; set; }
+
+    public object FirstOpenGraphAttachment { get; set; }
 }
 
-internal class AuthorMappingProfile : Profile
+internal class CastMappingProfile : Profile
 {
-    public AuthorMappingProfile()
+    public CastMappingProfile()
     {
-        _ = this.CreateMap<FarcasterNet.Domain.Models.Cast, Cast>()
-            .ReverseMap();
+        _ = this.CreateMap<Domain.Models.Cast, Cast>()
+            .ReverseMap()
+       ;
     }
 }
 

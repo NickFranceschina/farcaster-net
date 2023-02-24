@@ -28,6 +28,7 @@ public class GetDefaultRecommendedCastsQueryHandler : IRequestHandler<GetDefault
     public async Task<List<Cast>> Handle(GetDefaultRecommendedCastsQuery request, CancellationToken cancellationToken)
     {
         var casts = await this.repository.GetDefaultRecommendedFeed(request.Limit, request.Cursor, cancellationToken);
-        return this.mapper.Map<List<Cast>>(casts); 
+        var ecasts = this.mapper.Map<List<Cast>>(casts);
+        return ecasts;
     }
 }

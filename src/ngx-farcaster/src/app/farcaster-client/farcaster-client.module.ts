@@ -8,8 +8,13 @@ import { ButtonModule } from 'primeng/button';
 import { StyleClassModule } from 'primeng/styleclass';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { DataViewModule } from 'primeng/dataview';
+import { AvatarModule } from 'primeng/avatar';
+
 import { FeedComponent } from './feed.component';
 import { FarcasterClientRoutingModule } from './farcaster-client-routing.module';
+import { TimeagoModule } from 'ngx-timeago';
+import { BadgeModule } from 'primeng/badge';
+import { ChipModule } from 'primeng/chip';
 
 @NgModule({
     imports: [
@@ -22,7 +27,11 @@ import { FarcasterClientRoutingModule } from './farcaster-client-routing.module'
         PanelMenuModule,
         ButtonModule,
         DataViewModule,
-        FarcasterClientRoutingModule
+        AvatarModule,
+        BadgeModule,
+        ChipModule,
+        TimeagoModule,
+        FarcasterClientRoutingModule        
     ],
     declarations: [FeedComponent]
 })
