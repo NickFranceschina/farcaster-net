@@ -12,6 +12,8 @@ import { IconService } from './demo/service/icon.service';
 import { NodeService } from './demo/service/node.service';
 import { PhotoService } from './demo/service/photo.service';
 import { TimeagoModule } from 'ngx-timeago';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { FcAuthInterceptor } from './auth.interceptor';
 
 @NgModule({
     declarations: [
@@ -24,6 +26,7 @@ import { TimeagoModule } from 'ngx-timeago';
     ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },
+        { provide: HTTP_INTERCEPTORS, useClass: FcAuthInterceptor, multi: true },
         CountryService, CustomerService, EventService, IconService, NodeService,
         PhotoService, ProductService
     ],

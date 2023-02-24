@@ -11,6 +11,7 @@ public class GetDefaultRecommendedCastsQuery : IRequest<List<Cast>>
 {
     public int Limit { get; init; } = 20;
     public string Cursor { get; init; }
+    public string Auth { get; init; }
 }
 
 
@@ -27,7 +28,7 @@ public class GetDefaultRecommendedCastsQueryHandler : IRequestHandler<GetDefault
 
     public async Task<List<Cast>> Handle(GetDefaultRecommendedCastsQuery request, CancellationToken cancellationToken)
     {
-        var casts = await this.repository.GetDefaultRecommendedFeed(request.Limit, request.Cursor, cancellationToken);
+        var casts = await this.repository.GetDefaultRecommendedFeed(request.Limit, request.Cursor, request.Auth, cancellationToken);
         var ecasts = this.mapper.Map<List<Cast>>(casts);
         return ecasts;
     }
